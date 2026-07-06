@@ -194,6 +194,10 @@
       align-items: center;
     }
 
+    .hero-grid>* {
+      min-width: 0;
+    }
+
     h1,
     h2,
     h3 {
@@ -310,6 +314,16 @@
       .stats-row {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
       }
     }
 
@@ -433,6 +447,10 @@
       align-items: start;
     }
 
+    .about-grid>* {
+      min-width: 0;
+    }
+
     .about-grid p {
       color: var(--muted);
       margin-bottom: 1.1rem;
@@ -449,6 +467,11 @@
       align-items: flex-start;
       background: var(--ink);
       border-color: var(--ink);
+    }
+
+    .about-card>div:last-child {
+      min-width: 0;
+      flex: 1;
     }
 
     .about-card .icon {
